@@ -1,8 +1,13 @@
 {
   "name": "eclf-utils",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.5",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "exports": {
+    "require": "./lib/index.js",
+    "import": "./esm/index.js"
+  },
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "prebuild": "npm run test",
