@@ -1,7 +1,12 @@
 {
   "name": "eclf-utils",
-  "version": "1.0.0-beta.5",
-  "description": "",
+  "version": "1.0.0-beta.6",
+  "description": "eclf tools",
+  "files": [
+    "dist",
+    "lib",
+    "esm"
+  ],
   "main": "./lib/index.js",
   "module": "./esm/index.js",
   "exports": {
@@ -20,6 +25,10 @@
     "log"
   ],
   "author": "zfitness",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zFitness/eclf-utils"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.9",
