@@ -2,21 +2,21 @@
 
 <div align="center">
 
-English | [简体中文](./README-zh_CN.md)
+[English](./README.md) | 简体中文
 
 </div>
 
 ## 关于 eclf
 
-At present, the common WEB log format is mainly divided into two types, one is Apache's NCSA log format, and the other is IIS's W3C log format. NCSA format is divided into NCSA General Log format (CLF) and NCSA extended Log format (ECLF). At present, the most commonly used are NCSA extended Log format (ECLF) and Apache log format based on custom types. This project is a tool for reading and writing eclf.
+目前常见的 WEB 日志格式主要由两类，一类是 Apache 的 NCSA 日志格式，另一类是 IIS 的 W3C 日志格式。NCSA 格式又分为 NCSA 普通日志格式（CLF）和 NCSA 扩展日志格式（ECLF）两类，目前最常用的是 NCSA 扩展日志格式（ECLF）及基于自定义类型的 Apache 日志格式；本项目是读写 eclf 的工具。
 
 
-## Install
+## 安装
 ```bash
 npm install eclf-utils
 ```
 
-## Usage
+## 使用
 
 ```js
 import { parse } from "eclf-utils";
@@ -28,7 +28,7 @@ console.log(
 );
 ```
 
-log:
+输出如下:
 
 ```js
 {
