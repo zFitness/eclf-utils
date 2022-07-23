@@ -2,6 +2,7 @@ import path from "path";
 import esbuild from "rollup-plugin-esbuild";
 import babel from "rollup-plugin-babel";
 import { terser } from "rollup-plugin-terser";
+import dts from "rollup-plugin-dts";
 
 export default [
   {
@@ -45,7 +46,7 @@ export default [
     output: [
       {
         dir: path.resolve(__dirname, "dist/"),
-        name: 'ECLF',
+        name: "ECLF",
         format: "umd",
       },
     ],
@@ -58,5 +59,20 @@ export default [
       }),
       terser(),
     ],
+  },
+  {
+    input: path.resolve(__dirname, "./src/index.ts"),
+    output: [
+      {
+        dir: path.resolve(__dirname, "esm"),
+        format: "esm",
+      },
+      {
+        dir: path.resolve(__dirname, "lib"),
+        format: "cjs",
+      },
+    ],
+    external: [],
+    plugins: [dts({ respectExternal: true })],
   },
 ];

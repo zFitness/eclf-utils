@@ -1,12 +1,8 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "outDir": "./esm"
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "Node"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "esm"]
+  "include": ["src/**/*"]
 }
