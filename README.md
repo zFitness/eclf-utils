@@ -6,7 +6,7 @@ English | [简体中文](./README-zh_CN.md)
 
 </div>
 
-## 关于 eclf
+## About eclf
 
 At present, the common WEB log format is mainly divided into two types, one is Apache's NCSA log format, and the other is IIS's W3C log format. NCSA format is divided into NCSA General Log format (CLF) and NCSA extended Log format (ECLF). At present, the most commonly used are NCSA extended Log format (ECLF) and Apache log format based on custom types. This project is a tool for reading and writing eclf.
 
