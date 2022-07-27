@@ -1,22 +1,17 @@
 {
   "name": "eclf-utils",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0-beta.8",
   "description": "eclf tools",
   "files": [
-    "dist",
-    "lib",
-    "esm"
+    "dist"
   ],
-  "main": "./lib/index.js",
-  "module": "./esm/index.js",
-  "exports": {
-    "require": "./lib/index.js",
-    "import": "./esm/index.js"
-  },
+  "main": "./dist/index.common.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "jest",
     "prebuild": "npm run test",
-    "build": "rollup -c"
+    "build": "rm -rf dist && rollup -c"
   },
   "keywords": [
     "eclf",
