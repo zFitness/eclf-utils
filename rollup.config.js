@@ -9,7 +9,7 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        file: path.resolve(__dirname, "dist", "index.esm.mjs"),
+        file: path.resolve(__dirname, "dist", "index.esm.js"),
         format: "esm",
       },
     ],
@@ -27,7 +27,7 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        file: path.resolve(__dirname, "dist", "index.common.cjs"),
+        file: path.resolve(__dirname, "dist", "index.common.js"),
         format: "cjs",
       },
     ],

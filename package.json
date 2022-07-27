@@ -1,17 +1,13 @@
 {
   "name": "eclf-utils",
-  "version": "1.0.0-beta.9",
+  "version": "1.0.0-beta.10",
   "description": "eclf tools",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.common.cjs",
-  "module": "./dist/index.esm.mjs",
+  "main": "./dist/index.common.js",
+  "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    "require": "./dist/index.common.cjs",
-    "import": "./dist/index.esm.mjs"
-  },
   "scripts": {
     "test": "jest",
     "prebuild": "npm run test",
