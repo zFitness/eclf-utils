@@ -9,7 +9,7 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        dir: path.resolve(__dirname, "esm"),
+        file: path.resolve(__dirname, "dist", "index.esm.mjs"),
         format: "esm",
       },
     ],
@@ -27,7 +27,7 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        dir: path.resolve(__dirname, "lib"),
+        file: path.resolve(__dirname, "dist", "index.common.cjs"),
         format: "cjs",
       },
     ],
@@ -45,7 +45,7 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        dir: path.resolve(__dirname, "dist/"),
+        file: path.resolve(__dirname, "dist", "index.umd.js"),
         name: "ECLF",
         format: "umd",
       },
@@ -64,12 +64,8 @@ export default [
     input: path.resolve(__dirname, "./src/index.ts"),
     output: [
       {
-        dir: path.resolve(__dirname, "esm"),
+        dir: path.resolve(__dirname, "dist"),
         format: "esm",
-      },
-      {
-        dir: path.resolve(__dirname, "lib"),
-        format: "cjs",
       },
     ],
     external: [],
